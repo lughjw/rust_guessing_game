@@ -1,5 +1,6 @@
 # rust_guessing_game
-Basic guessing game created to learn rust
+Basic guessing game created to learn rust. This was my first time building anything in Rust and I folowed the instructions from the Rust docs itself located [here](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html).
+What follows is my observations and understandings that I had from building it.
 ## Concepts learned
 ### Variables
 * Variable types are inferred unless specified ```let foo = 0;``` versus ```let foo: u32 = 0;```
