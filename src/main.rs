@@ -16,16 +16,10 @@ fn main() {
             .expect("Failed to read line");
 
         guesses_cnt += 1;
-
-        let mut some_num: i32;
         
-        // Convert to 
+        // Convert to a number (32 bit signed integer: i32)
         let guess: i32 = match guess.trim().parse() {
             Ok(num) => num,
-            // {
-            //     guesses_cnt+=1;
-            //     return num;
-            // },
             Err(_) => continue,
         };
             
