@@ -10,12 +10,17 @@ fn main() {
     loop {
         println!("Please input your guess.");
         let mut guess = String::new();
-        guesses_cnt += 1;
+
         io::stdin()
             .read_line(&mut guess)
             .expect("Failed to read line");
 
-        let guess: u32 = match guess.trim().parse() {
+        guesses_cnt += 1;
+
+        let mut some_num: i32;
+        
+        // Convert to 
+        let guess: i32 = match guess.trim().parse() {
             Ok(num) => num,
             // {
             //     guesses_cnt+=1;
